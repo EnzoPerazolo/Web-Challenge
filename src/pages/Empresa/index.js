@@ -5,7 +5,7 @@ export default function Empresa() {
     return (
         <div id="empresa">
             <img src={LogoEmpresaImg} alt="logo" id="imgLog"/>
-            <div id="divEmpresa">
+            <div class="container-vaga">
                 <form>
                     <h2>Inscrição de Empresa</h2>
                     <label htmlFor="nomeEmp">Empresa</label>
