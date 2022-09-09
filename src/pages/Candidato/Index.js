@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function Candidato() {
-    /*
+
+/*
     function changeVisibility() {
         const visibility = document.getElementById("dropdown").style.visibility;
         console.log(visibility)
@@ -13,9 +14,7 @@ export default function Candidato() {
     }
     const button = document.getElementById("button");
     button.addEventListener("click", changeVisibility)
-    
-    
-    
+
     var Form1 = document.getElementById("Form1")
     var Form2 = document.getElementById("Form2")
     var Form3 = document.getElementById("Form3")
@@ -35,7 +34,7 @@ export default function Candidato() {
     var Back5 = document.getElementById("Back5")
     
     var progress = document.getElementById("progress")
-    
+*/  
     function Next1(){
         Form1.style.left = "-700px";
         Form2.style.left = "90px";
@@ -96,9 +95,9 @@ export default function Candidato() {
         progress.style.width = "550px"
     }
 
-    
 
-    */
+
+  
 
     return (
         <div className="candidato">
@@ -111,7 +110,7 @@ export default function Candidato() {
                 <input type="tel" id="telefoneCand" name="telefoneCand" placeholder="Telefone" />
 
                 <div className="btn-box">
-                    <button type="button" onclick={()=>{}} id="Next1">Next</button>
+                    <button type="button" onClick={()=> Next1()} id="Next1">Next</button>
                 </div>
             </form>
 
@@ -133,8 +132,8 @@ export default function Candidato() {
                 <input type="date" id="dataTer" name="dataTer" />
 
                 <div className="btn-box">
-                    <button type="button" onclick={()=>{}} id="Back1">Back</button>
-                    <button type="button" onclick={()=>{}} id="Next2">Next</button>
+                    <button type="button" onClick={()=> Back1()} id="Back1">Back</button>
+                    <button type="button" onClick={()=> Next2()} id="Next2">Next</button>
                 </div>
             </form>
 
@@ -150,8 +149,8 @@ export default function Candidato() {
                 <input type="text" id="notaForm" name="notaForm" placeholder="Nota" />
 
                 <div className="btn-box">
-                    <button type="button" onclick={()=>{}} id="Back2">Back</button>
-                    <button type="button" onclick={()=>{}} id="Next3">Next</button>
+                    <button type="button" onClick={()=> Back2()} id="Back2">Back</button>
+                    <button type="button" onClick={()=> Next3()} id="Next3">Next</button>
                 </div>
             </form>
 
@@ -162,8 +161,8 @@ export default function Candidato() {
                 <textarea name="descComp" id="descComp" cols="75" rows="8" placeholder="Ex.: Inglês, Microsoft Office, Comunicação"></textarea>
 
                 <div className="btn-box">
-                    <button type="button" onclick={()=>{}} id="Back3">Back</button>
-                    <button type="button" onclick={()=>{}} id="Next4">Next</button>
+                    <button type="button" onClick={()=> Back3()} id="Back3">Back</button>
+                    <button type="button" onClick={()=> Next4()} id="Next4">Next</button>
                 </div>
             </form>
 
@@ -179,8 +178,8 @@ export default function Candidato() {
                 <input type="url" id="urlCred" name="urlCred" placeholder="URL da credencial" />
 
                 <div className="btn-box">
-                    <button type="button" onclick={()=>{}} id="Back4">Back</button>
-                    <button type="button" onclick={()=>{}} id="Next5">Next</button>
+                    <button type="button" onClick={()=> Back4()} id="Back4">Back</button>
+                    <button type="button" onClick={()=> Next5()} id="Next5">Next</button>
                 </div>
             </form>
 
@@ -202,7 +201,7 @@ export default function Candidato() {
                 <label htmlFor="opcaoTrab">Não</label>
 
                 <div className="btn-box">
-                    <button type="button" onclick={()=>{}} id="Back5">Back</button>
+                    <button type="button" onClick={()=> Back5()} id="Back5">Back</button>
                     <button type="submit" >Enviar</button>
                 </div>
             </form>
