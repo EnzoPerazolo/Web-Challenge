@@ -1,0 +1,350 @@
+/* @font-face { font-family: PoppinsLight; src: url("/fonts/FontsFree-Net-Poppins-Light.ttf"); } */
+
+body{
+    background-color: #EEEEEE;
+}
+
+/* p, span{
+    font-family: 'PoppinsLight';
+} */
+
+header{
+    background-color: #398AB9;
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header nav{
+    text-align: left;
+    text-decoration: none;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background-color: lightgray;
+}
+
+header nav a:active{
+    background-color: #ffffff;
+    color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: 100;
+    font-weight: bold;
+}
+
+h2{
+    color: black;
+}
+
+p{
+    color: black;
+    font-size: 17px;
+}
+
+.linkNav{
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#conteudo{
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 44px;
+    background-color: #398AB9;
+    position: relative;
+    outline: none;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+.container button {
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+    color: #398AB9;
+    background-color: #398AB9;
+    border: none;
+    outline: none;
+}
+
+.container button img{
+    width: 25px;
+}
+
+.dropdown {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15rem;
+    background-color: #398AB9;
+    right: 0;
+    top: 0;
+    visibility: visible;
+    margin-top: 54px;
+    border: 2px;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navigation{
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px .5rem;
+}
+
+.navigation img{
+    align-items: initial;
+    flex: 1;
+}
+
+.navigation p {
+    justify-content: center;
+    flex: 9;
+    margin-left: 10px;
+}
+
+#sitemap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sitemap-tree{
+    display: flex ;
+}
+
+.sitemap-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartao{
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cartaovaga{
+    margin-right: 40px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+#sitemap img{
+    width: 11rem;
+    margin-top: 5px;
+}
+
+.vl{
+    width: 5px;
+    height: 15px;
+    background-color: #398AB9;
+}
+
+.hl{
+    width: 858px;
+    height: 5px;
+    background-color: #398AB9;
+}
+
+#empresa {
+    text-align: center;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: bold;
+    display: flex;
+    height: 830px;
+    width: 100%;
+    padding: 35px;
+}
+#empresa input{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 50px;
+}
+
+#empresa label{
+    display: block;
+    padding-top: 20px;
+}
+
+#empresa button{
+    border: none;
+    border-radius: 15px;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;
+    background-color: #D8D2CB;
+    padding: 5px 20px;
+}
+
+textarea{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+
+#imgLog{
+    width: 50%;
+    height: 740px;
+}
+
+#divEmpresa{
+    padding-top: 50px;
+    width: 50%;
+    height: 740px;
+    background-color: #1C658C;
+
+}
+
+#divForm{ 
+    text-align: center;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: bold;
+    display: flex; 
+}
+
+#vaga{
+    display: flex;
+    flex-direction: column;
+}
+
+.vaga{
+    display: flex;
+    margin: 30px;
+}
+
+.vaga a{
+    text-decoration: none;
+    color: black;
+}
+
+.vaga-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px ;
+    border: double;
+    height: 110px;
+    width: 50%;
+}
+
+.vaga-content img{
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+    margin: 20px;
+}
+
+.vaga-content h3{
+    position: absolute;
+    padding-left: 110px;    
+}
+
+.vaga-content h4{
+    padding-top: 25px;
+    padding-right: 60px;
+}
+
+#imgLogCand{
+    width: 60%;
+}
+
+.container-vaga{
+    width: 660px;
+    height: 450px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.container-vaga{
+    width: 500px;
+}
+
+.container-vaga form{
+    width: 380px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+#descVaga{
+    width: 400px;
+}
+
+/* form{
+    font-family: 'PoppinsLight';
+} */
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.opcao{
+    width: 31px;
+}
+
+#submit{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
