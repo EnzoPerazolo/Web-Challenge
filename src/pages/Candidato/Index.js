@@ -95,7 +95,11 @@ export default function Candidato() {
         Form6.style.left = "700px";
         progress.style.width = "550px"
     }
+
+    
+
     */
+
     return (
         <div className="candidato">
             <form id="Form1">
