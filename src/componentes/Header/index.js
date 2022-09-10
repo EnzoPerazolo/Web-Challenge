@@ -9,10 +9,12 @@ export default function Header(){
                     <input type="checkbox" id="menu_toggle"></input>
                         <label class="menu_btn" for="menu_toggle"><span></span></label>
                         <ul class="menu_box">
-                        <li><a class="menu_item" href="#">Produtos</a></li>
-                        <li><a class="menu_item" href="#">Equipe</a></li>
-                        <li><a class="menu_item" href="#">Sobre</a></li>
-                        <li><a class="menu_item" href="#">Contato</a></li>
+                        <li><Link to="/" className="menu_item">Home</Link></li>
+                        <li><Link to="/candidato" className="menu_item">Inscrição do Candidato</Link></li>
+                        <li><Link to="/empresa" className="menu_item">Inscrição da Empresa</Link></li>
+                        <li><Link to="/informacaovaga" className="menu_item">Informação sobre vagas</Link></li>
+                        <li><Link to="/inscricaovaga" className="menu_item">Inscrição de vaga</Link></li>
+                        <li><Link to="/vaga" className="menu_item">Vaga</Link></li>
                         </ul>
                 </nav>
             </div>

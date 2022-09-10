@@ -43,7 +43,7 @@ export default function Informacao(){
                     <h3>Estágiario de Dev</h3>
                     <h4>Vaga para estágio de desenvolvedor front-end</h4>
                 </Link>
-
+                
                 <Link to="/vaga" className="vaga-content" target="_blank">
                     <img src={InfoImg} alt="Imagem info"/>
                     <h3>Estágiario de Dev</h3>

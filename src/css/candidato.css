@@ -328,3 +328,7 @@ form button{
     background-color: #398AB9;
     transition-duration: .25s;
 }
+
+.menu_item{
+    color: #000000;
+}
