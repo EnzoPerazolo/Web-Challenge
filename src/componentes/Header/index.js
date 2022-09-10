@@ -4,18 +4,18 @@ export default function Header(){
     return(
         <header>
             <h1>Contratação de Candidatos</h1>
-                <nav className="container">
-
-                    <Link to="/">Home</Link>
-                    <Link to="/candidato">Inscrição do Candidato</Link>
-                    <Link to="/empresa">Inscrição da Empresa</Link>
-                    <Link to="/informacaovaga">Informação sobre vagas</Link>
-                    <Link to="/inscricaovaga">Inscrição de vaga</Link>
-                    <Link to="/vaga">Vaga</Link>
-                   
-                    {/* conteudo do header */}
-    
+            <div>
+                <nav class="hamburger-menu">
+                    <input type="checkbox" id="menu_toggle"></input>
+                        <label class="menu_btn" for="menu_toggle"><span></span></label>
+                        <ul class="menu_box">
+                        <li><a class="menu_item" href="#">Produtos</a></li>
+                        <li><a class="menu_item" href="#">Equipe</a></li>
+                        <li><a class="menu_item" href="#">Sobre</a></li>
+                        <li><a class="menu_item" href="#">Contato</a></li>
+                        </ul>
                 </nav>
+            </div>
         </header>
     );  
 }
