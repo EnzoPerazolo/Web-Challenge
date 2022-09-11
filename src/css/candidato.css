@@ -1,3 +1,341 @@
+@media(max-width:480px){
+/* @font-face { font-family: PoppinsLight; src: url("/fonts/FontsFree-Net-Poppins-Light.ttf"); } */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'PoppinsLight' ; */
+}
+
+header{
+    background-color: #398AB9;
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header nav{
+    text-align: left;
+    text-decoration: none;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background-color: lightgray;
+}
+
+header nav a:active{
+    background-color: #ffffff;
+    color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: 100;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 44px;
+    background-color: #398AB9;
+    position: relative;
+    outline: none;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+.container button {
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+    color: #398AB9;
+    background-color: #398AB9;
+    border: none;
+    outline: none;
+}
+
+.container button img{
+    width: 25px;
+}
+
+.dropdown {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15rem;
+    background-color: #398AB9;
+    right: 0;
+    top: 0;
+    visibility: visible;
+    margin-top: 54px;
+    border: 2px;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navigation{
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px .5rem;
+}
+
+.navigation img{
+    align-items: initial;
+    flex: 1;
+}
+
+.navigation p {
+    justify-content: center;
+    flex: 9;
+    margin-left: 10px;
+}
+
+.linkNav{
+    width: 100%;
+}
+
+p{
+    color: black;
+    font-size: 17px;
+}
+
+/* p, span{
+    font-family: 'PoppinsLight';
+} */
+
+body{
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgb(0,0,0,0.8)),url(background.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.candidato{
+    width: 460px;
+    height: 800px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.candidato form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    transition: 0.5s;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.opcaoEst{
+    width: 31px;
+}
+
+.opcaoTrab{
+    width: 31px;
+}
+
+#notaForm{
+    width: 490px;
+}
+
+::placeholder{
+    color: #777;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 125px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#Form2{
+    left: 700px;
+}
+
+#Form3{
+    left: 700px;
+}
+
+#Form4{
+    left: 700px;
+}
+
+#Form5{
+    left: 700px;
+}
+
+#Form6{
+    left: 700px;
+}
+
+.step-row{
+    width: 460px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width: 110px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 65px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    transition: 0.5s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #398AB9;
+
+}
+
+#descAtiv{
+    width: 490px;
+}
+
+#descForm{
+    width: 490px;
+}
+
+#descComp{
+    width: 490px;
+}
+
+#descProj{
+    width: 490px;
+}
+
+.hamburger-menu{
+    float: left;
+}
+#menu_toggle{
+    opacity: 0;
+}
+#menu_toggle:checked + .menu_btn > span{
+    transform:rotate(45deg);
+}
+#menu_toggle:checked + .menu_btn > span::before{
+    top:0;
+    transform:rotate(0);
+}
+#menu_toggle:checked + .menu_btn > span::after{
+    top:0;
+    transform:rotate(90deg);
+}
+#menu_toggle:checked ~ .menu_box{
+    left:0 !important;
+}
+.menu_btn{
+    position:fixed;
+    top:16px;
+    left:16px;
+    width:20px;
+    height: 20px;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu_btn > span, .menu_btn > span::before, .menu_btn > span::after{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #616161;
+    transition-duration: .25;
+}
+.menu_btn > span::before{
+    content: '';
+    top:-8px;
+}
+.menu_btn > span::after{
+    content: '';
+    top:6px;
+}
+.menu_box{
+    display: block;
+    position: fixed;
+    top:0;
+    left:-100%;
+    height: 100vh;
+    width: 150px;
+    margin:0;
+    padding: 42px 0 0;
+    list-style: none;
+    background-color: #398AB9;
+    transition-duration: .25s;
+}
+
+.menu_item{
+    color: #000000;
+}
+}
+
+@media(min-width: 481px) and (max-width:768px){
 /* @font-face { font-family: PoppinsLight; src: url("/fonts/FontsFree-Net-Poppins-Light.ttf"); } */
 
 *{
@@ -331,4 +669,679 @@ form button{
 
 .menu_item{
     color: #000000;
+}
+}
+
+@media(min-width: 769px) and (max-width:1279px){
+/* @font-face { font-family: PoppinsLight; src: url("/fonts/FontsFree-Net-Poppins-Light.ttf"); } */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'PoppinsLight' ; */
+}
+
+header{
+    background-color: #398AB9;
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header nav{
+    text-align: left;
+    text-decoration: none;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background-color: lightgray;
+}
+
+header nav a:active{
+    background-color: #ffffff;
+    color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: 100;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 44px;
+    background-color: #398AB9;
+    position: relative;
+    outline: none;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+.container button {
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+    color: #398AB9;
+    background-color: #398AB9;
+    border: none;
+    outline: none;
+}
+
+.container button img{
+    width: 25px;
+}
+
+.dropdown {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15rem;
+    background-color: #398AB9;
+    right: 0;
+    top: 0;
+    visibility: visible;
+    margin-top: 54px;
+    border: 2px;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navigation{
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px .5rem;
+}
+
+.navigation img{
+    align-items: initial;
+    flex: 1;
+}
+
+.navigation p {
+    justify-content: center;
+    flex: 9;
+    margin-left: 10px;
+}
+
+.linkNav{
+    width: 100%;
+}
+
+p{
+    color: black;
+    font-size: 17px;
+}
+
+/* p, span{
+    font-family: 'PoppinsLight';
+} */
+
+body{
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgb(0,0,0,0.8)),url(background.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.candidato{
+    width: 660px;
+    height: 800px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.candidato form{
+    width: 480px;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    transition: 0.5s;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.opcaoEst{
+    width: 31px;
+}
+
+.opcaoTrab{
+    width: 31px;
+}
+
+#notaForm{
+    width: 490px;
+}
+
+::placeholder{
+    color: #777;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 125px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#Form2{
+    left: 700px;
+}
+
+#Form3{
+    left: 700px;
+}
+
+#Form4{
+    left: 700px;
+}
+
+#Form5{
+    left: 700px;
+}
+
+#Form6{
+    left: 700px;
+}
+
+.step-row{
+    width: 660px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width: 110px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 110px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    transition: 0.5s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #398AB9;
+
+}
+
+#descAtiv{
+    width: 490px;
+}
+
+#descForm{
+    width: 490px;
+}
+
+#descComp{
+    width: 490px;
+}
+
+#descProj{
+    width: 490px;
+}
+
+.hamburger-menu{
+    float: left;
+}
+#menu_toggle{
+    opacity: 0;
+}
+#menu_toggle:checked + .menu_btn > span{
+    transform:rotate(45deg);
+}
+#menu_toggle:checked + .menu_btn > span::before{
+    top:0;
+    transform:rotate(0);
+}
+#menu_toggle:checked + .menu_btn > span::after{
+    top:0;
+    transform:rotate(90deg);
+}
+#menu_toggle:checked ~ .menu_box{
+    left:0 !important;
+}
+.menu_btn{
+    position:fixed;
+    top:16px;
+    left:16px;
+    width:20px;
+    height: 20px;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu_btn > span, .menu_btn > span::before, .menu_btn > span::after{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #616161;
+    transition-duration: .25;
+}
+.menu_btn > span::before{
+    content: '';
+    top:-8px;
+}
+.menu_btn > span::after{
+    content: '';
+    top:6px;
+}
+.menu_box{
+    display: block;
+    position: fixed;
+    top:0;
+    left:-100%;
+    height: 100vh;
+    width: 150px;
+    margin:0;
+    padding: 42px 0 0;
+    list-style: none;
+    background-color: #398AB9;
+    transition-duration: .25s;
+}
+
+.menu_item{
+    color: #000000;
+}
+}
+
+@media(min-width:1280px){
+/* @font-face { font-family: PoppinsLight; src: url("/fonts/FontsFree-Net-Poppins-Light.ttf"); } */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'PoppinsLight' ; */
+}
+
+header{
+    background-color: #398AB9;
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header nav{
+    text-align: left;
+    text-decoration: none;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background-color: lightgray;
+}
+
+header nav a:active{
+    background-color: #ffffff;
+    color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    /* font-family: 'PoppinsLight'; */
+    font-weight: 100;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    height: 44px;
+    background-color: #398AB9;
+    position: relative;
+    outline: none;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+.container button {
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+    color: #398AB9;
+    background-color: #398AB9;
+    border: none;
+    outline: none;
+}
+
+.container button img{
+    width: 25px;
+}
+
+.dropdown {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15rem;
+    background-color: #398AB9;
+    right: 0;
+    top: 0;
+    visibility: visible;
+    margin-top: 54px;
+    border: 2px;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navigation{
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px .5rem;
+}
+
+.navigation img{
+    align-items: initial;
+    flex: 1;
+}
+
+.navigation p {
+    justify-content: center;
+    flex: 9;
+    margin-left: 10px;
+}
+
+.linkNav{
+    width: 100%;
+}
+
+p{
+    color: black;
+    font-size: 17px;
+}
+
+/* p, span{
+    font-family: 'PoppinsLight';
+} */
+
+body{
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgb(0,0,0,0.8)),url(background.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.candidato{
+    width: 660px;
+    height: 800px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.candidato form{
+    width: 480px;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    transition: 0.5s;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.opcaoEst{
+    width: 31px;
+}
+
+.opcaoTrab{
+    width: 31px;
+}
+
+#notaForm{
+    width: 490px;
+}
+
+::placeholder{
+    color: #777;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 125px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#Form2{
+    left: 700px;
+}
+
+#Form3{
+    left: 700px;
+}
+
+#Form4{
+    left: 700px;
+}
+
+#Form5{
+    left: 700px;
+}
+
+#Form6{
+    left: 700px;
+}
+
+.step-row{
+    width: 660px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width: 110px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 110px;
+    background: linear-gradient(to right, #1C658C, #398AB9);
+    transition: 0.5s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #398AB9;
+
+}
+
+#descAtiv{
+    width: 490px;
+}
+
+#descForm{
+    width: 490px;
+}
+
+#descComp{
+    width: 490px;
+}
+
+#descProj{
+    width: 490px;
+}
+
+.hamburger-menu{
+    float: left;
+}
+#menu_toggle{
+    opacity: 0;
+}
+#menu_toggle:checked + .menu_btn > span{
+    transform:rotate(45deg);
+}
+#menu_toggle:checked + .menu_btn > span::before{
+    top:0;
+    transform:rotate(0);
+}
+#menu_toggle:checked + .menu_btn > span::after{
+    top:0;
+    transform:rotate(90deg);
+}
+#menu_toggle:checked ~ .menu_box{
+    left:0 !important;
+}
+.menu_btn{
+    position:fixed;
+    top:16px;
+    left:16px;
+    width:20px;
+    height: 20px;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu_btn > span, .menu_btn > span::before, .menu_btn > span::after{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #616161;
+    transition-duration: .25;
+}
+.menu_btn > span::before{
+    content: '';
+    top:-8px;
+}
+.menu_btn > span::after{
+    content: '';
+    top:6px;
+}
+.menu_box{
+    display: block;
+    position: fixed;
+    top:0;
+    left:-100%;
+    height: 100vh;
+    width: 150px;
+    margin:0;
+    padding: 42px 0 0;
+    list-style: none;
+    background-color: #398AB9;
+    transition-duration: .25s;
+}
+
+.menu_item{
+    color: #000000;
+}
 }
